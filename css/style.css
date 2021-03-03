@@ -1,0 +1,210 @@
+/*CSS for 3 column with image background icon*/
+@import "";/*insert url path inside the "" */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text&display=swap');
+body{
+  font-family: sans-serif;
+  font-weight: 300 !important;
+  margin: 0px;
+}
+#main-header{
+  /*border: 1px dashed #000;*/
+  border-bottom: 1px solid #000;
+  width: 100%;
+  background: #014776;
+}
+/*hidden border setup outside the tag more like Padding */
+#mai-header::before{
+  content: "";
+  display: block;
+  width: 10px;
+  height: 200px;
+  background: #000;
+  position: absolute;
+}
+.header, .content, .content2{
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.h1-align{
+  float:left;
+  margin-left:20px;
+  color: white;
+}
+
+h1{
+  display: inline-block;
+  line-height: 20px;
+
+}
+.h1-font{
+  font-size: 50px;
+  margin-top: 10px;
+}
+.div-cont{
+  margin-top: -35px;
+}
+.div-award{
+  margin-left: 20px;
+}
+footer{
+  border-bottom: none;
+  border-top: 1px solid #000;
+  background: rgba(255 255 255 9);
+  bottom: 0px;
+
+  border-bottom: 0px solid #000;
+  width: 99.2%;
+  background: #014776;
+  height: 40px;
+  text-align: center;
+  color: white;
+  margin-button: 10px;
+  padding: 5px;
+}
+.footer-position{
+  position: absolute;
+}
+.div-align{
+  display: inline-right;
+  text-align: right;
+  margin-right: 20px;
+  color: white;
+}
+a{
+  text-decoration: none;
+  border: 0px solid #000;
+  font-size:18px;
+  color: white;
+}
+a:hover{
+  color:#00bfff !important;
+  /* border-bottom: 3px solid #01c5ce; */
+}
+.h1-text{
+  font-size: 35px;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing:-2px;
+}
+.lbl-text{
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing:2px;
+  height: 100px;
+}
+/*for text content*/
+#top-stories {
+  width:100%;
+  margin: auto;
+  /*margin-top: 20px*/
+}
+#site-stories{
+  font-family: 'Big Shoulders Inline Text', cursive;
+}
+button{
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  margin: 5px auto;
+}
+.aboutme{
+  border: 0px solid #000;
+  max-width: 8.5in;
+  height: 11in;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:3%;
+  box-shadow: 3px 1px 10px 3px #000;
+}
+.more-link{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.more-link.bolded-link{
+  font-style: italic;
+  color:red;
+}
+.div-left{
+  width: 25%;
+  height: 10.56in;
+  border: 0px solid red;
+  margin-left: 1px;
+  text-align: left;
+  float: left;
+  margin-left: 20px;
+  margin-top: 30px;
+
+}
+.div-right{
+  width: 67%;
+  border: 0px solid #000;
+  border-left: 5px solid #014776;
+  text-align: left;
+  float: right;
+  height: 11in;
+}
+p{
+   /*letter-spacing:0px;  for space between leters*/
+   /*word-spacing: 20px;   for space between word*/
+   text-indent: 20px; /*text-indent: 20px;   for Tab word*/
+}
+/*for image background in a DIV content*/
+
+article{
+  width: 100%;
+  display: inline-block;
+  border: 0px solid #000;
+  text-align: right;
+  /*box-shadow: 5px 5px 10px 2px #000;
+  */
+  /*transition can use value/tag "all" that give motion
+  all css under the article:hover class or you can select specific
+  under article:hover class ex. transition: box-shadow 1s; and even
+  join it separately by comma ex. transition: box-shadow 1s, ;*/
+  transition: box-shadow 1s, background: 10s;
+  transition-delay: 0s;
+}
+#article:hover{
+box-shadow: 5px 5px 20px #00f;
+background: #0f0;
+}
+article img{
+  width: 100%;
+  height: 100px;
+}
+.article-image{
+width: 100%;
+height: 200px;
+background-size: cover !important;
+border:1px solid #000;
+}
+.my-import{
+  display: block;
+  width: 90%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+}
+/*focus for textbox select to type effect*/
+.my-import:focus{
+  background: #0f5;
+  color: #000;
+  outline: none;
+}
+/*active for curser longpress effect*/
+#article:active{
+  opacity: .4;
+}
+.image-circle{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  box-shadow: 5px 5px 10px 10px #00f;
+}
+
+.my-text{
+  max-height: 200px;/*set the height to givr specific content*/
+  overflow: scroll; /*controls content for the set max-height or even make a scroll tag(scroll) */
+  overflow-x: hidden; /*get un usefull scroll navigation*/
+  border: 2px solid #000;
+}

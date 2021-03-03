@@ -1,0 +1,261 @@
+/*CSS for 3 column with image background icon*/
+@import "";/*insert url path inside the "" */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text&display=swap');
+body{
+  font-family: sans-serif;
+  font-weight: 300 !important;
+  margin: 0px;
+}
+#main-header{
+  /*border: 1px dashed #000;*/
+  border-bottom: 1px solid #000;
+  width: 100%;
+  background: #014776;
+}
+/*hidden border setup outside the tag more like Padding */
+#mai-header::before{
+  content: "";
+  display: block;
+  width: 10px;
+  height: 200px;
+  background: #000;
+  position: absolute;
+}
+h1{
+  display: inline-block;
+  line-height: 20px;
+}
+.h1-align{
+  float:left;
+  margin-left:20px;
+  color: white;
+}
+.div-align{
+  display: inline-right;
+  text-align: right;
+  margin-right: 20px;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  border: 0px solid #000;
+  font-size:18px;
+  color: white;
+}
+a:hover{
+  color:#00bfff !important;
+}
+.acount-link{
+  color:#014776;
+  font-style: italic;
+  font-weight: normal;
+  transition: letter-spacing 2s;
+}
+.acount-link:hover{
+  letter-spacing: 3px;
+}
+footer{
+  border-bottom: none;
+  border-top: 1px solid #000;
+  background: rgba(255 255 255 9);
+  bottom: 0px;
+
+  position: absolute;
+  border-bottom: 0px solid #000;
+  width: 99.3%;
+  background: #014776;
+  height: 40px;
+  text-align: center;
+  color: white;
+  margin-button: 10px;
+  padding: 5px;
+}
+
+/*for text content*/
+#top-stories {
+  width:100%;
+  margin: auto;
+  /*margin-top: 20px*/
+}
+#site-stories{
+  font-family: 'Big Shoulders Inline Text', cursive;
+}
+button{
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  margin: 5px auto;
+}
+.aboutme{
+  border: 1px solid #000;
+  max-width: 8.5in;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+.more-link{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.more-link.bolded-link{
+  font-style: italic;
+  color:red;
+}
+.lbl-text{
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing:0px;
+  border: 0px solid #000;
+  margin-left: 10px;
+
+}
+.text-up{
+  margin-top: 60px 60px 60px;
+}
+ .h1-text{
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing:0px;
+}
+.h11-text{
+  font-size: 18px;
+  font-family: sans-serif;
+  letter-spacing:2px;
+  /*transition can use value/tag "all" that give motion
+  all css under the article:hover class or you can select specific
+  under article:hover class ex. transition: box-shadow 1s; and even
+  join it separately by comma ex. transition: box-shadow 1s, ;*/
+  transition: font-size 2s;
+  transition-delay: 0s;
+  }
+.home-image{
+width: 100%;
+height: 500px;
+background-size: cover !important;
+border:0px solid #000;
+}
+.div-left{
+  width: 49%;
+  border: 0px solid #000;
+  text-align: left;
+  float: right;
+  height: 500px;
+  margin-top: 2%;
+}
+.div-right{
+  width: 49%;
+  border: 0px solid #000;
+  text-align: left;
+  float: left;
+  height: 500px;
+  margin-top: 3%;
+}
+.div-smc{
+  border: 0px solid #000;
+  width: 80%;
+}
+.div-smc-child{
+  border: 0px solid #000;
+  width: 7%;
+  margin-top: -15%;
+}
+.div-smc2{
+  border: 0px solid #000;
+  width: 80%;
+  margin-top: -2%;
+}
+.div-smc-child2{
+  border: 0px solid #000;
+  width: 7%;
+  margin-top: 2%;
+}
+/*for image background in a DIV content*/
+article{
+  width: 100%;
+  display: inline-block;
+  border: 0px solid #000;
+  text-align: right;
+  /*box-shadow: 5px 5px 10px 2px #000;
+  */
+  /*transition can use value/tag "all" that give motion
+  all css under the article:hover class or you can select specific
+  under article:hover class ex. transition: box-shadow 1s; and even
+  join it separately by comma ex. transition: box-shadow 1s, ;*/
+  transition: box-shadow 1s, background: 10s;
+  transition-delay: 0s;
+}
+#article:hover{
+box-shadow: 5px 5px 20px #00f;
+background: #0f0;
+}
+article img{
+  width: 100%;
+  height: 100px;
+}
+.my-import{
+  display: block;
+  width: 90%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+}
+/*focus for textbox select to type effect*/
+.my-import:focus{
+  background: #0f5;
+  color: #000;
+  outline: none;
+}
+/*active for curser longpress effect*/
+article:active{
+  opacity: .4;
+}
+.image-circle{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  box-shadow: 5px 5px 10px 10px #00f;
+}
+
+.my-text{
+  max-height: 200px;/*set the height to givr specific content*/
+  overflow: scroll; /*controls content for the set max-height or even make a scroll tag(scroll) */
+  overflow-x: hidden; /*get un usefull scroll navigation*/
+  border: 2px solid #000;
+}
+/*for Text Animation*/
+div.slide-left {
+  width:100%;
+}
+div.slide-left p {
+  animation: slide-left 3s;
+}
+/*for Text Animation*/
+div.slide-left2 {
+  width:100%;
+}
+div.slide-left2 p {
+  animation: slide-left 3s;
+  animation-delay: 2s;
+}
+/*for Text Animation*/
+div.slide-left3 {
+  width:100%;
+}
+div.slide-left3 p {
+  animation: slide-left 3s;
+  animation-delay: 4s;
+}
+@keyframes slide-left {
+  from {
+    margin-left: 40%;
+    width: 80%;
+  }
+  to {
+    margin-left: 0%;
+    width: 80%;
+  }
+}
+
+/*for slide*/

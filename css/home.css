@@ -1,0 +1,175 @@
+/*CSS for 3 column with image background icon*/
+@import "";/*insert url path inside the "" */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text&display=swap');
+
+body{
+  font-family: sans-serif;
+  font-weight: 300 !important;
+  margin: 0px;
+}
+/*header CSS*/
+#main-header{
+  /*border: 1px dashed #000;*/
+  border-bottom: 1px solid #000;
+  width: 100%;
+  background: #014776;
+}
+.h1-align{
+  float:left;
+  margin-left:20px;
+  color: white;
+}
+.div-align{
+  display: inline-right;
+  text-align: right;
+  margin-right: 20px;
+  color: white;
+}
+#site-stories{
+  font-family: 'Big Shoulders Inline Text', cursive;
+}
+a{
+  text-decoration: none;
+  border: 0px solid #000;
+  font-size:18px;
+  color: white;
+}
+a:hover{
+  color:#00bfff !important;
+}
+/*#main-header::before{
+  content: "";
+  display: block;
+  width: 10px;
+  height: 200px;
+  background: #000;
+  position: absolute;
+}
+#main-header::after{
+  display: block;
+  height: 1000px;
+  width: 10px;
+  background: #000;
+  margin-left: 20px;
+}*/
+
+/*header CSS end Here*/
+h1{
+  display: inline-block;
+  line-height: 20px;
+}
+footer{
+  border-bottom: none;
+  border-top: 1px solid #000;
+  background: rgba(255 255 255 9);
+  bottom: 0px;
+
+  position: absolute;
+  border-bottom: 0px solid #000;
+  width: 99.3%;
+  background: #014776;
+  height: 40px;
+  text-align: center;
+  color: white;
+  margin-button: 10px;
+  padding: 5px;
+}
+.lbl-text{
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing:2px;
+  height: 100px;
+}
+/*for text content*/
+#top-stories {
+  width:100%;
+  margin: auto;
+  /*margin-top: 20px*/
+}
+button{
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  margin: 5px auto;
+}
+.more-link{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.h1-text{
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing:-2px;
+  text-shadow: 1px 4px 5px #ece5db;
+  /*transition can use value/tag "all" that give motion
+  all css under the article:hover class or you can select specific
+  under article:hover class ex. transition: box-shadow 1s; and even
+  join it separately by comma ex. transition: box-shadow 1s, ;*/
+  transition: font-size 3s;
+  transition-delay: 0s;
+  }
+.home-image{
+width: 100%;
+height: 500px;
+background-size: cover !important;
+border:0px solid #000;
+}
+.div-left{
+  width: 30%;
+  border: 0px solid #000;
+  text-align: right;
+  float: left;
+  height: 100%;
+  margin-top: 10%;
+}
+.h1-text:hover{
+  text-shadow: 1px 4px 5px #014776;
+  }
+.div-left:hover{
+font-size: 18px;
+}
+.div-right{
+  width: 58%;
+  border: 0px solid #000;
+  text-align: left;
+  float: right;
+  height: 500px;
+  margin-top: 1%;
+
+}
+#div-left-before::before{
+  content: "";
+  display: block;
+  width: .4%;
+  height: 10%;
+  background: #014776;
+  position: absolute;
+  margin-left: 31%;
+}
+.image-circle{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  box-shadow: 5px 5px 10px 10px #00f;
+}
+.my-text{
+  max-height: 200px;/*set the height to givr specific content*/
+  overflow: scroll; /*controls content for the set max-height or even make a scroll tag(scroll) */
+  overflow-x: hidden; /*get un usefull scroll navigation*/
+  border: 2px solid #000;
+}
+
+/*for image Animation*/
+.div-slide {
+  position: relative;
+  animation: myfirst 3s 2;
+  animation-direction: alternate;
+}
+@keyframes myfirst {
+  0%   { left: 0px; top: 0px;}
+  25%  {left: 0px; top: 0px;}/*200*/
+  50%  { left: 0px; top: 100px;}/*200-200*/
+  75%  { left: 0px; top: 100px;}/*-200*/
+  100% { left: 0px; top: 0px;}
+}

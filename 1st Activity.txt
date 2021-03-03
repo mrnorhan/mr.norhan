@@ -1,0 +1,23 @@
+1st day - Research
+	*Layout
+	  - Include the color motive (Color Scheme 2-3 combination)
+	*Process
+	  - Landing (Home Page)
+	  - About Me (Pic. Pers. Details, Educ. Background, Work Experience, Skills, Cert./Seminar)
+	  - Contact (Social Media - Clickable, CV-google works, Contact #)
+2nd day
+	*Morning Layout - Figma, Adobe Ilustrator
+	*Afternoon - Coding
+3rd day
+	*Morning Coding
+	*Afternoon Presentation
+	   - Discuss layout
+	   - Discuss how you did it
+
+Note:
+	*Sudgested Sites for Color
+	   -Adobe Colors - Explore - you can Search
+	   -https://www.free-css.com/template-categories/portfolio?start=72
+
+		 https://undraw.co/illustrations
+		 getbootstrap.com
